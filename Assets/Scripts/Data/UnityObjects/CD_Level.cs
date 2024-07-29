@@ -1,18 +1,20 @@
+using Data.ValueObjects;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CD_Level : MonoBehaviour
+
+namespace Data.UnityObjects
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [CreateAssetMenu(fileName = "CD_Level", menuName = "Picke/CD_Level" , order = 0)]
+    public class CD_Level : ScriptableObject
     {
-        
+
+        public List<LevelData> Levels;
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
 }
